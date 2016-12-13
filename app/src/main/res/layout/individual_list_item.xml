@@ -20,10 +20,11 @@
     <TextView
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:id="@+id/movie_name"
         android:layout_marginLeft="16dp"
         android:text="Movie Name"
+        android:textColor="#FFFFFF"
         android:textSize="25sp"/>
     <ImageView
         android:layout_width="60dp"
@@ -42,6 +43,7 @@
         android:layout_marginTop="63dp"
         android:layout_marginBottom="16dp"
         android:layout_below="@id/movie_name"
+        android:textColor="#FFFFFF"
         android:id="@+id/rating"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/logo"
