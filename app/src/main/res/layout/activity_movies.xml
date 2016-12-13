@@ -18,16 +18,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Popular Flicks"
+            android:text="Popular and trending Movies"
             android:id="@+id/Rec_fli"
             android:textSize="27sp"
             android:textColor="#FFFFFF"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="90dp"
             android:textStyle="bold"
             />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/popflixlist"
+            android:layout_marginTop="10dp"
             android:layout_below="@+id/Rec_fli"
             android:layout_width="match_parent"
             android:orientation="horizontal"
@@ -39,7 +41,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search for any movie"
+            android:text="Search for any Movie"
             android:textColor="#FFFFFF"
             android:textSize="27sp"
             android:id="@+id/for_mov"
