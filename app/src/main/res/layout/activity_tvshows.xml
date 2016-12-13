@@ -10,7 +10,7 @@
         tools:context="com.example.android.magtanium.TVShows">
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="600dp"
             android:src="@drawable/fla"
             android:scaleType="centerCrop"
             android:layout_marginTop="56dp"/>
@@ -59,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ed_text"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="40dp"
             android:text="Search"
             android:id="@+id/se_mov"
             android:layout_centerHorizontal="true"/>
