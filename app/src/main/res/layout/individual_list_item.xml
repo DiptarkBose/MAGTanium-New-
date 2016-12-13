@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    >
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/marvel_1_lollipop"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/movie_name"
+        android:scaleType="centerCrop"
+        android:id="@+id/individual_mov_im"/>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/movie_name"
+        android:layout_marginLeft="16dp"
+        android:text="Movie Name"
+        android:textSize="25sp"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/individual_mov_im"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/imdb_logo"
+        android:id="@+id/logo"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/movie_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/movie_name"
+        android:id="@+id/rating"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/logo"
+        android:layout_marginRight="16dp"
+        android:text="Rating"
+        android:textSize="17sp"/>
+
+</RelativeLayout>
