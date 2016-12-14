@@ -3,6 +3,7 @@ package com.example.android.magtanium;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -48,12 +49,19 @@ public class Movies extends android.support.v4.app.Fragment{
         //Change R.layout.tab1 in you classes
         View v= inflater.inflate(R.layout.activity_movies, container, false);
         Button btn = (Button)v.findViewById(R.id.se_mov);
+        Button btn1=(Button) v.findViewById(R.id.fav_butt);
         img=(ImageView) v.findViewById(R.id.individual_mov_im);
         tv1=(TextView) v.findViewById(R.id.movie_name);
         tv2=(TextView) v.findViewById(R.id.rating);
-
-
-
+        tv5=(TextView) v.findViewById(R.id.Rec_fli);
+        tv4=(TextView) v.findViewById(R.id.wel_mov);
+        tv6=(TextView) v.findViewById(R.id.for_mov);
+        tv7=(TextView) v.findViewById(R.id.fav);
+        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/MotionPicture_PersonalUseOnly.ttf");
+        tv4.setTypeface(custom_font);
+        tv5.setTypeface(custom_font);
+        tv6.setTypeface(custom_font);
+        tv7.setTypeface(custom_font);
         final EditText et= (EditText) v.findViewById(R.id.ed_text);
         LinearLayoutManager layoutManager
                 = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
@@ -96,6 +104,14 @@ public class Movies extends android.support.v4.app.Fragment{
                         public void onClick(View view) {
                             Intent i = new Intent(getActivity(), LoadingScreen.class);
                             i.putExtra("Movie name", et.getText().toString());
+                            startActivity(i);
+                        }
+                    });
+                    btn1.setOnClickListener(new View.OnClickListener() {
+
+                        public void onClick(View view) {
+                            Intent i = new Intent(getActivity(), TestDatabaseActivity.class);
+
                             startActivity(i);
                         }
                     });

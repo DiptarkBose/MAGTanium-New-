@@ -25,7 +25,8 @@ public class TestDatabaseActivity extends ListActivity {
         btn=(Button) findViewById(R.id.add);
         datasource = new CommentsDataSource(this);
         datasource.open();
-
+        if(mov==null)
+            btn.setVisibility(View.GONE);
         List<Comment> values = datasource.getAllComments();
 
         // use the SimpleCursorAdapter to show the

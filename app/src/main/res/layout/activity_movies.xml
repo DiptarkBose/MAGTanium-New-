@@ -10,17 +10,30 @@
         tools:context="com.example.android.magtanium.Movies">
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="600dp"
+            android:layout_height="830dp"
             android:src="@drawable/st"
             android:scaleType="centerCrop"
             android:layout_marginTop="56dp"/>
+        <TextView
+            android:layout_width="240dp"
+            android:textSize="35sp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/wel_mov"
+            android:layout_marginTop="80dp"
+            android:text="Welcome to the magical, star-studded world of Cinemas!!"
+            android:textColor="#FFFFFF"/>
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Popular and trending Movies"
+            android:layout_below="@id/wel_mov"
+            android:text=" Popular and trending Movies "
+            android:background="#F44336"
             android:id="@+id/Rec_fli"
-            android:textSize="27sp"
+
+            android:textSize="40sp"
             android:textColor="#FFFFFF"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="90dp"
@@ -41,9 +54,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search for any Movie"
+            android:text=" Search for any Movie "
             android:textColor="#FFFFFF"
-            android:textSize="27sp"
+            android:textSize="40sp"
+            android:background="#F44336"
+            android:layout_marginTop="20dp"
             android:id="@+id/for_mov"
             android:layout_below="@id/popflixlist"
             android:textStyle="bold"
@@ -55,6 +70,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="16dp"
             android:id="@+id/ed_text"
+            android:inputType="textCapWords"
+            android:backgroundTint="@android:color/holo_red_light"
             android:layout_marginRight="16dp"
             android:layout_below="@id/for_mov"/>
         <Button
@@ -65,5 +82,24 @@
             android:text="Search"
             android:id="@+id/se_mov"
             android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/se_mov"
+            android:layout_marginLeft="16dp"
+            android:background="#F44336"
+            android:id="@+id/fav"
+            android:textColor="#FFFFFF"
+            android:text="Your Favorites List: "/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fav"
+            android:text="My Favorites"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/fav_butt"/>
     </RelativeLayout>
 </ScrollView>
