@@ -13,15 +13,18 @@
         <activity android:name=".Movie" />
         <activity android:name=".LoadingScreen" />
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".TestDatabaseActivity" />
+        <activity android:name=".TestDatabaseActivity1" />
+        <activity android:name=".TestDatabaseActivity2" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TestDatabaseActivity" />
-        <activity android:name=".TestDatabaseActivity1" />
-        <activity android:name=".TestDatabaseActivity2"></activity>
     </application>
 
 </manifest>
