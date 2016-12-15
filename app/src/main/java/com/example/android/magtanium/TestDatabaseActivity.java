@@ -45,7 +45,7 @@ public class TestDatabaseActivity extends ListActivity {
 
         switch (view.getId()) {
             case R.id.add:
-                Toast.makeText(this, "Movie added to this list!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Item added to this list!!", Toast.LENGTH_SHORT).show();
                 comment = datasource.createComment(mov);
                 adapter.add(comment);
                 finish();
