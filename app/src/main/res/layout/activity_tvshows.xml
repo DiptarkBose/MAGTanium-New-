@@ -97,7 +97,7 @@
             android:background="#F44336"
             android:id="@+id/fav"
             android:textColor="#FFFFFF"
-            android:text="Your Favorites List: "/>
+            android:text=" Your Favorites List "/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
