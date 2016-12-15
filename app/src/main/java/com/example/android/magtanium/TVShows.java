@@ -218,7 +218,7 @@ public class TVShows extends android.support.v4.app.Fragment{
         try {
             JSONObject baseJsonResponse = new JSONObject(jsonResp);
             JSONArray popular_movies_array=baseJsonResponse.getJSONArray("results");
-            for(i=0; i<20; i++)
+            for(i=0; i<12; i++)
             {
                 JSONObject movie_item=popular_movies_array.getJSONObject(i);
                 plot = movie_item.optString("overview");
